@@ -33,12 +33,14 @@ export const CalendarPage = () => {
 
     return (
         <div>
-            <FullCalendar
-                plugins={[dayGridPlugin]}
-                initialView="dayGridMonth"
-                weekends={true}
-                events={trainings}
-            />
+            {trainings.length > 0 && (
+                <FullCalendar
+                    plugins={[dayGridPlugin]}
+                    initialView="dayGridMonth"
+                    weekends={true}
+                    events={trainings}
+                />
+            )}        
         </div>
     );
 };

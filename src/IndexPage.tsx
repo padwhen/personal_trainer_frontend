@@ -2,6 +2,7 @@ import "preline/preline"
 import Trainings from "./components/Trainings"
 import Customers from "./components/Customers"
 import { CalendarPage } from "./components/Calendar"
+import { StatisticsPage } from "./components/Statistics"
 
 
 export function IndexPage() {
@@ -17,6 +18,9 @@ export function IndexPage() {
             <button type="button" className="text-xl hs-tab-active:bg-gray-500 hs-tab-active:text-white hs-tab-active:hover:text-white hs-tab-active:dark:text-white py-3 px-4 text-center flex-auto inline-flex justify-center items-center gap-x-2 bg-transparent font-medium text-gray-500 hover:text-gray-600 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:text-neutral-300" id="fill-and-justify-item-4" data-hs-tab="#fill-and-justify-4" aria-controls="fill-and-justify-4" role="tab">
                 Calendar
             </button>
+            <button type="button" className="text-xl hs-tab-active:bg-gray-500 hs-tab-active:text-white hs-tab-active:hover:text-white hs-tab-active:dark:text-white py-3 px-4 text-center flex-auto inline-flex justify-center items-center gap-x-2 bg-transparent font-medium text-gray-500 hover:text-gray-600 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:text-neutral-300" id="fill-and-justify-item-5" data-hs-tab="#fill-and-justify-5" aria-controls="fill-and-justify-5" role="tab">
+                Statistics
+            </button>
         </nav>
         <div className='mt-2'>
           <div id="fill-and-justify-1" role="tabpanel" aria-labelledby="fill-and-justify-item-1">
@@ -27,6 +31,9 @@ export function IndexPage() {
           </div>
           <div id="fill-and-justify-4" className="hidden" role="tabpanel" aria-labelledby="fill-and-justify-item-4">
             <CalendarPage />
+          </div>
+          <div id="fill-and-justify-5" className="hidden" role="tabpanel" aria-labelledby="fill-and-justify-item-5">
+            <StatisticsPage />
           </div>
         </div>
       </div>
