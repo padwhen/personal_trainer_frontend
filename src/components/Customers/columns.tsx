@@ -1,6 +1,7 @@
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, MoreHorizontal } from "lucide-react"
 import { Button } from "../ui/button";
+import { Actions } from "./actions";
 
 export interface Customer {
     id: string;
@@ -12,6 +13,8 @@ export interface Customer {
     email: string;
     phone: string;
 }
+
+
 
 export const columns: ColumnDef<Customer>[] = [
     {
@@ -90,5 +93,14 @@ export const columns: ColumnDef<Customer>[] = [
               </Button>
             )
         },
+    },
+    {
+      id: "actions",
+      cell: ({ row }) => {
+        const customer = row.original
+        return (
+          <Actions customer={customer} />
+        )
+      },
     },
 ]
