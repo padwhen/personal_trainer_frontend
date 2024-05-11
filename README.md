@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# Personal Trainer Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Final project for Frontend Development course. 
 
-Currently, two official plugins are available:
+## Tasks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Description:
+Personal Trainer company needs front end app for their customer database. Database contains info about customers and their trainings. They have REST API and documentation that contains all information needed for front end development. Your task is to implement front end for them using React.
 
-## Expanding the ESLint configuration
+### Task 1:
+* Created list pages for customers and trainings. Create navigation for two list pages.
+* List pages contain following features: Sorting, Searching (or Filtering)
+* Training list also show a customer name and format the date in the table, eg dd.mm.yyyy hh:mm
+<img width="780" alt="task1 1" src="https://github.com/padwhen/personal_trainer_frontend/assets/123895854/d7dba135-384e-47ab-893f-f1718ac43b1f">
+<img width="780" alt="task2 1" src="https://github.com/padwhen/personal_trainer_frontend/assets/123895854/4c684434-37b5-44fc-9625-608a21237d20">
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Task 2:
+* Added CRUD functions to the customer and training list pages: Add & Edit customer, Delete existing customer (Add also yes/no confirmation dialog), Add training to a customer, Use date picker component to enter the exercise date, Delete training (Add also yes/no confirmation dialog)
+* <img width="780" alt="task1 1" src="https://github.com/padwhen/personal_trainer_frontend/assets/123895854/42ddd76a-3741-4a11-a162-6cfa36fb7e2f">
 
-- Configure the top-level `parserOptions` property like this:
+### Task 3:
+* Add Export functionality, that user can export all customers to a CSV file. Filter out any extra data from the file (eg button columns)
+* Add calendar page where personal trainer can see all trainings (monthly, weekly, daily)
+* Deploy app to some cloud server
+<img width="780" alt="task3" src="https://github.com/padwhen/personal_trainer_frontend/assets/123895854/2b3cb06b-7d50-4ac5-9cfb-ca6fab3e6380">
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Task 4:
+* Add statistics page where user can see the amount of minutes by different activities.
+<img width="780" alt="task4" src="https://github.com/padwhen/personal_trainer_frontend/assets/123895854/e9758167-66f9-40df-b297-413d9b82bec7">
+
+## Installation
+
+```bash
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
